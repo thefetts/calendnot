@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <div>
         <h1>Calendnot</h1>
         <p>Select any available date and time to reserve your meeting!
-            <button>&lt;</button>
-            <button>&gt;</button>
+            <button onclick="load()">&lt;</button>
+            <button onclick="load()">&gt;</button>
         </p>
         <table>
             <thead>
@@ -131,6 +132,7 @@
                 </tr>
             </tbody>
         </table>
+        <div id="loading" hidden="true">LOADING...</div>
     </div>
 </body>
 
